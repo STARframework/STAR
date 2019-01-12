@@ -18,7 +18,7 @@ export default {
     // public: 'public', // The public directory (files copied to dist during build)
     // assets: 'docs', // The output directory for bundled JS and CSS
   },
-  siteRoot: 'https://star.js.org',
+  siteRoot: 'https://starframework.github.io',
   basePath: 'STAR',
   getRoutes: async () => {
     const { data: posts } = await axios.get(
@@ -30,7 +30,7 @@ export default {
         getData: () => ({
           posts,
         }),
-        children: posts.map(post => ({
+        children: posts.slice(1, 3).map(post => ({
           path: `/post/${post.id}`,
           component: 'src/containers/Post',
           getData: () => ({

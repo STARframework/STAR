@@ -19,7 +19,7 @@ export default {
     // assets: 'docs', // The output directory for bundled JS and CSS
   },
   siteRoot: 'https://starframework.github.io',
-  // basePath: 'STAR',
+  basePath: 'STAR',
   getRoutes: async () => {
     const { data: posts } = await axios.get(
       'https://jsonplaceholder.typicode.com/posts',

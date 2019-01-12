@@ -16,7 +16,7 @@ export default {
     dist: 'docs', // The production output directory.
     // devDist: 'tmp/dev-server', // The development scratch directory.
     // public: 'public', // The public directory (files copied to dist during build)
-    assets: 'docs', // The output directory for bundled JS and CSS
+    // assets: 'docs', // The output directory for bundled JS and CSS
   },
   getRoutes: async () => {
     const { data: posts } = await axios.get(
